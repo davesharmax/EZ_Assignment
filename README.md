@@ -1,4 +1,4 @@
-# Step-by-Step Guide to Building a Scalable and Cost-Effective LLM Chat Application
+# Step-by-Step Guide to Build a Scalable and Cost-Effective LLM Chat Application
 This guide walks you through the process of deploying a large language model (LLM) chat system that is scalable, cost-effective, and resource-efficient. We'll outline the key steps to set up a system that can handle varying traffic loads while minimizing GPU usage when idle.
 ________________________________________
 ## Step 1: Choose Cloud Infrastructure and Set Up Kubernetes
