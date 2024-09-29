@@ -1,0 +1,38 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "title": "LLM API",
+      "version": "1.0"
+    },
+    "paths": {
+      "/chat": {
+        "post": {
+          "x-amazon-apigateway-integration": {
+            "type": "aws_proxy",
+            "httpMethod": "POST",
+            "uri": "arn:aws:apigateway:{region}:lambda:path/2015-03-31/functions/{lambda-arn}/invocations",
+            "responses": {}
+          },
+          "responses": {
+            "200": {
+              "description": "Chat response",
+              "schema": {
+                "$ref": "#/definitions/ChatResponse"
+              }
+            }
+          }
+        }
+      }
+    },
+    "definitions": {
+      "ChatResponse": {
+        "type": "object",
+        "properties": {
+          "response": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+  
